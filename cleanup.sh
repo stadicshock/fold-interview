@@ -1,5 +1,5 @@
 # drops all table
-psql postgres -c "\i sql/cleanup.sql"
+psql postgres -c "\i scripts/sql/cleanup.sql"
 
 # delete all indexes
 ELASTICSEARCH_URL="https://fold-money-test.es.europe-west3.gcp.cloud.es.io"
