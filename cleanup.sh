@@ -2,4 +2,7 @@
 psql postgres -c "\i sql/cleanup.sql"
 
 # delete all indexes
-curl -X DELETE 'http://localhost:9200/_all'
+ELASTICSEARCH_URL="https://fold-money-test.es.europe-west3.gcp.cloud.es.io"
+ECE_API_KEY="SUhha3BZc0JGZlRBUzN3LWFTbG46ZVBvTUhnYlRSLVNiMzRJQXNNVTZiUQ=="
+
+curl -X DELETE -H "Content-Type: application/json" -H "Authorization: ApiKey $ECE_API_KEY" "$ELASTICSEARCH_URL/_all"

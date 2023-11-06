@@ -8,7 +8,6 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	// "gopkg.in/olivere/elastic.v5"
 	"github.com/elastic/go-elasticsearch/v7"
 )
 
@@ -17,8 +16,8 @@ var client *elasticsearch.Client
 func init() {
 	var err error
 	client, err = elasticsearch.NewClient(elasticsearch.Config{
-		CloudID: "fold:dXMtY2VudHJhbDEuZ2NwLmNsb3VkLmVzLmlvOjQ0MyRlM2Y3Yjk0M2JmMTY0ODhjYjQwOWE4ODRkYWUzYmZmYyQzNTM1ODI1NTdjMzA0OTc1YjBjOTVmMGUyYTg3YzQ1Yg==",
-		APIKey:  "OThFSW00c0JEc0Q2MkpfYzFJU3k6YVFkM1lUOGZRQWU1czQwQksyVVFlZw==",
+		CloudID: "fold_money_test:ZXVyb3BlLXdlc3QzLmdjcC5jbG91ZC5lcy5pbzo0NDMkNzhjMzhhNGMyZTkwNDllOWFjYmExYzZhNmE3MjFhN2QkMThmNDkzZmYyYWEwNGE1NTgxODE0ZGYxZWY1NjEyNTM=",
+		APIKey:  "SUhha3BZc0JGZlRBUzN3LWFTbG46ZVBvTUhnYlRSLVNiMzRJQXNNVTZiUQ==",
 	})
 	if err != nil {
 		log.Println("elasticsearch err:", err)

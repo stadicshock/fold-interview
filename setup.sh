@@ -1,7 +1,9 @@
+# Setup DB
 psql postgres -c "\i sql/schema.sql"
 psql postgres -c "\i sql/seed.sql"
 
-
-curl -X PUT "http://localhost:9200/users" -H "Content-Type: application/json" -d @esmapping/users_index_mapping.json
-curl -X PUT "http://localhost:9200/hashtags" -H "Content-Type: application/json" -d @esmapping/hashtags_index_mapping.json
-curl -X PUT "http://localhost:9200/projects" -H "Content-Type: application/json" -d @esmapping/projects_index_mapping.json
+# Setup ES
+ELASTICSEARCH_URL="https://fold-money-test.es.europe-west3.gcp.cloud.es.io"
+ECE_API_KEY="SUhha3BZc0JGZlRBUzN3LWFTbG46ZVBvTUhnYlRSLVNiMzRJQXNNVTZiUQ=="
+# todo get URL and api key via terraform 
+curl -X PUT "$ELASTICSEARCH_URL/projects" -H "Content-Type: application/json" -H "Authorization: ApiKey $ECE_API_KEY" -d @esmapping/projects_index_mapping.json

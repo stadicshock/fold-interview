@@ -1,19 +1,37 @@
 {
-    "mappings": {
-      "properties": {
-        "name": {
-          "type": "text"
-        },
-        "slug": {
-          "type": "keyword"
-        },
-        "description": {
-          "type": "text"
-        },
-        "created_at": {
-          "type": "date"
+  "mappings": {
+    "properties": {
+      "projectName": {
+        "type": "text"
+      },
+      "slug": {
+        "type": "text"
+      },
+      "description": {
+        "type": "text"
+      },
+      "users": {
+        "type": "nested",
+        "properties": {
+          "userId": {
+            "type": "keyword"
+          },
+          "userName": {
+            "type": "keyword"
+          }
+        }
+      },
+      "hashtags": {
+        "type": "nested",
+        "properties": {
+          "hashtagId": {
+            "type": "keyword"
+          },
+          "hashtagName": {
+            "type": "keyword"
+          }
         }
       }
     }
   }
-  
+}
