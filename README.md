@@ -2,6 +2,9 @@
 Take home task from fold.money
 REST API service that will query Elasticsearch.
 
+# Prerequisites
+Install postgres and logstash on local
+
 Steps to start REST api service
 
 1) Setup infra (Optional) // TODO : Pass config/secrets to env such as hostname,username and password
@@ -39,3 +42,11 @@ curl 'localhost:8080/projects/search-with-hashtags' \
 
 3) Full-text fuzzy search for projects
 curl 'localhost:8080/projects/search?q=project'
+
+
+Pending tasks:
+1) AWS postgres connectivity issue (alternatively using local postgres)
+2) Pass secrets to env from terraform out and use them in app/scripts
+3) Move logstash setup to aws via terraform
+4) Handle logstash for delete operation in postgres
+5) Code documentation and unit test cases
