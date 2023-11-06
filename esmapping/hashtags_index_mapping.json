@@ -1,0 +1,13 @@
+{
+    "mappings": {
+      "properties": {
+        "name": {
+          "type": "text"
+        },
+        "created_at": {
+          "type": "date"
+        }
+      }
+    }
+  }
+  
