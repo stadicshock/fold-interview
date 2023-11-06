@@ -50,3 +50,6 @@ Pending tasks:
 3) Move logstash setup to aws via terraform
 4) Handle logstash for delete operation in postgres
 5) Code documentation and unit test cases
+
+
+Loom video link : https://www.loom.com/share/538c14fd18c4421eb026d4296408ff08?sid=c30ec23c-0c7a-47b4-a0ae-499be611a071
