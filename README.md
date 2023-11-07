@@ -52,4 +52,6 @@ Pending tasks:
 5) Code documentation and unit test cases
 
 
-Loom video link : https://www.loom.com/share/538c14fd18c4421eb026d4296408ff08?sid=c30ec23c-0c7a-47b4-a0ae-499be611a071
+Loom video link for code flow : https://www.loom.com/share/538c14fd18c4421eb026d4296408ff08?sid=c30ec23c-0c7a-47b4-a0ae-499be611a071
+
+Look video link for checking sync b/w postgres and ES/APIs : https://www.loom.com/share/6debd5bb8a184ad98f88e3e5fa46f0b8?sid=ea6eb2e6-c45e-429d-ad70-f96731e055f4
